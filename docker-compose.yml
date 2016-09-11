@@ -1,14 +1,8 @@
 version: '2'
 services:
-  db:
-    image: postgres
-    volumes: 
-      - ./.db/:/var/lib/postgresql/data
   web:
     build: ./django/
     volumes:
       - ./app:/usr/src/app
     ports:
       - "8000:8000"
-    depends_on:
-      - db
