@@ -1,5 +1,5 @@
 """
-WSGI config for pinceladasnocturnas project.
+WSGI config for PinceladasNocturnas project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "pinceladasnocturnas.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "PinceladasNocturnas.settings")
 
 application = get_wsgi_application()
