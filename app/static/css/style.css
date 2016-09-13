@@ -1,0 +1,22 @@
+header{
+	width: 100%;
+	height: 100px;
+	min-height: 100px;
+	background-image: url('https://media.giphy.com/media/ygAaR0n5RsyAM/giphy.gif');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	color: #eee;
+	border-bottom: solid 4px #FFC234;
+}
+.mask{
+	height: 100%;
+	background-color: rgba(42, 44, 44, 0.9);
+}
+header h1{
+	margin: 0;
+	height: 100px;
+	padding: 25px;
+	text-align: center;
+	font-weight: normal;
+}

@@ -6,10 +6,10 @@ from .models import Galeria
 def galeria(request):
 	galeria = Galeria.objects.order_by('id')
 	template = loader.get_template('galeria.html')
-        title = 'Galeria de fotos Pinceladas Nocturnas'
+	title = 'Galeria de fotos Pinceladas Nocturnas'
 	ctn = {
 		'galeria': galeria,
-                'title': title
+        'title': title
 	}
 
 	return HttpResponse(template.render(ctn, request))
