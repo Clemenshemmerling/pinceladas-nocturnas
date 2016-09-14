@@ -8,6 +8,7 @@ header{
 	background-size: cover;
 	color: #eee;
 	border-bottom: solid 4px #FFC234;
+	box-shadow: 3px 4px 2px 0.5px rgba(0,0,0,.2);
 }
 .mask{
 	height: 100%;
