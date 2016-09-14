@@ -1,8 +1,11 @@
+body{
+	background-color: #303030;
+}
 header{
 	width: 100%;
 	height: 100px;
 	min-height: 100px;
-	background-image: url('https://media.giphy.com/media/ygAaR0n5RsyAM/giphy.gif');
+	background-image: url('https://media.giphy.com/media/11tsh60hFpCGwo/giphy.gif');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -20,4 +23,5 @@ header h1{
 	padding: 25px;
 	text-align: center;
 	font-weight: normal;
+	font-family: 'Lato', sans-serif;
 }
