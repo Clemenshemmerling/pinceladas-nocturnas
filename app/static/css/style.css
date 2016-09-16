@@ -25,3 +25,36 @@ header h1{
 	font-weight: normal;
 	font-family: 'Lato', sans-serif;
 }
+.ctn-gall{
+	max-width: 2304px;
+	margin: 40px 20px;
+
+}
+.div-flex{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.div-ctn{
+	background-color: #EEEEEE;
+	border-radius: 8px;
+	box-shadow: 3px 4px 2px 0.5px rgba(0,0,0,.2);
+	width: 400px;
+	border-bottom: solid 5px #FFC234;
+	margin: 0px 10px;
+}
+.div-ctn h1{
+	text-align: center;
+	font-weight: normal;
+	color: #555;
+}
+.div-p{
+	padding: 20px;
+	color: 
+}
+.div-ctn figure{
+	width: 300px;
+}
+.div-ctn img{
+	width: 100%;
+}

@@ -5,8 +5,19 @@
 {% block content %}
 	{% if galeria %}
 	{% for gall in galeria %}
-		<h1>{{ gall.nombre }}</h1>
-		<img src="{{ gall.imagen.url }}">
+	<content class="ctn-gall">
+		<div class="div-flex">
+			<div class="div-ctn">
+				<h1>{{ gall.nombre }}</h1>
+				<figure class="gall-fig">
+					<img src="{{ gall.imagen.url }}">	
+				</figure>
+					<div class="div-p">
+						<p>{{ gall.descripcion }}</p>
+					</div>
+			</div>
+		</div>
+	</content>
 	{% endfor %}
 	{% else%}
 		<h1>No hay elementos</h1>

@@ -1,4 +1,4 @@
-$(document).ready(function() {
+/*$(document).ready(function() {
 
     $(document)[0].oncontextmenu = function() { return false; }
 
@@ -10,4 +10,4 @@ $(document).ready(function() {
             return true;
         }
     });
-});
+});*/
