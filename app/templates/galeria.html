@@ -3,4 +3,12 @@
 	{{ title }}
 {% endblock %}
 {% block content %}
+	{% if galeria %}
+	{% for gall in galeria %}
+		<h1>{{ gall.nombre }}</h1>
+		<img src="{{ gall.imagen.url }}">
+	{% endfor %}
+	{% else%}
+		<h1>No hay elementos</h1>
+	{% endif %}
 {% endblock %}
