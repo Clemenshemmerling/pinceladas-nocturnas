@@ -5,14 +5,27 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"/>
 	<title>{% block page_title %}{% endblock %}</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="{% static 'css/normalize.css' %}">
 	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
-	<link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Roboto" rel="stylesheet" media="all">
+	<link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Roboto|Baloo+Tamma|Lato:700,900
+" rel="stylesheet" media="all">
 </head>
 <body>
 <header>
 	<div class="mask">
-		<h1>Pinceladas Nocturnas</h1>
+		<div class="menu">
+			<i class="fa fa-bars" aria-hidden="true"></i>
+			<div class="down-menu">
+				<div class="mask-ye">
+					<ul class="menu-ul">
+						<li><a href=""></a>Inicio</li>
+						<li><a href=""></a>Galeria</li>
+						<li><a href=""></a>Contactame</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 	</div>
 </header>
 <section>

@@ -11,3 +11,17 @@
         }
     });
 });*/
+
+/*$(document).ready(function(){
+	$(".div-ctn").mouseover(function(){
+		$(".div-p").show("blind");
+	});
+	$(".div-ctn").mouseleave(function(){
+		$(".div-p").hide("blind");
+	});
+});*/
+$(document).ready(function(){
+	$(".menu").click(function(){
+		$(".down-menu").toggle("drop", { direction: "left"}, 500);
+	});
+});

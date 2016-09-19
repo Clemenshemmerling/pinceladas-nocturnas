@@ -2,17 +2,24 @@
 {% block page_title %}
 	{{ title }}
 {% endblock %}
+{% load staticfiles %}
 {% block content %}
+	<div class="gal-head" style="background-image: url('{% static "../media/header.jpg" %}') ">
+		<div class="gal-head-title">
+			<h2 class="h2-fit">Pinceladas</h2>
+			<h2 class="h2-bold">Nocturnas</h2>
+		</div>
+	</div>
 	{% if galeria %}
 	{% for gall in galeria %}
 	<content class="ctn-gall">
 		<div class="div-flex">
 			<div class="div-ctn">
-				<h1>{{ gall.nombre }}</h1>
 				<figure class="gall-fig">
 					<img src="{{ gall.imagen.url }}">	
 				</figure>
 					<div class="div-p">
+						<h4>{{ gall.nombre }}</h4>
 						<p>{{ gall.descripcion }}</p>
 					</div>
 			</div>
