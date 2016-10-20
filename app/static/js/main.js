@@ -21,7 +21,7 @@
 	});
 });*/
 $(document).ready(function(){
-	$(".menu").click(function(){
+	$(".fa-bars").click(function(){
 		$(".down-menu").toggle("drop", { direction: "left"}, 500);
 	});
 });
