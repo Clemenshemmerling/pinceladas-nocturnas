@@ -11,22 +11,24 @@
 		</div>
 	</div>
 	{% if galeria %}
-	{% for gall in galeria %}
+	{% for galeria in galeria %}
 	<content class="ctn-gall">
 		<div class="div-flex">
 			<div class="div-ctn">
-				<figure class="gall-fig">
-					<img src="{{ gall.imagen.url }}">	
-				</figure>
-					<div class="div-p">
-						<h4>{{ gall.nombre }}</h4>
-						<p>{{ gall.descripcion }}</p>
+				<a href="{% url 'galeria_detail' pk=galeria.pk %}">
+					<figure class="galeria-fig">
+						<img src="{{ galeria.imagen.url }}">	
+					</figure>
+					<div class="div-p">								
+						<h4>{{ galeria.nombre }}</h4>
+						<p>{{ galeria.descripcion }}</p>
 					</div>
+				</a>
 			</div>
 		</div>
 	</content>
 	{% endfor %}
-	{% else%}
+	{% else %}
 		<h1>No hay elementos</h1>
 	{% endif %}
 {% endblock %}

@@ -116,6 +116,18 @@ header h1{
 	border-radius: 5px;
 	box-shadow: 3px 4px 2px 0.5px rgba(0,0,0,.2);
 }
+.head-pic{
+	margin-top: 100px;
+	display: flex;
+}
+.head-pic img{
+	margin: auto;
+}
+.detail-info{
+	text-align: center;
+	color: white;
+	padding: 0 20px;
+}
 
 @media(max-width: 700px){
 	.fa-bars{
@@ -158,6 +170,9 @@ header h1{
 	.gal-head-title{
 		font-size: 30px;
 	}
+}
+.head-pic img{
+	width: 100%;
 }
 @media(min-width: 710px){
 	.down-menu{
