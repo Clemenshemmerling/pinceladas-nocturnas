@@ -25,7 +25,7 @@ SECRET_KEY = 'zmhgip!41!l56-9f^@wo)7_%+o#=i!@ilry@^g%*-(688vgvze'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['192.168.99.100']
 
 
 # Application definition
@@ -125,6 +125,6 @@ STATICFILES_DIRS = [
 ]
 
 STATIC_URL = '/static/'
- 
+
 MEDIA_ROOT = 'media'
 MEDIA_URL = '/media/'

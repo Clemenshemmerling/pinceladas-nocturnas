@@ -4,6 +4,17 @@ from django.shortcuts import render, get_object_or_404
 from .models import Galeria
 # Create your views here.
 
+def index(request):
+	galeria = Galeria.objects.order_by('id')
+	template = loader.get_template('index.html')
+	title = 'Pinceladas Nocturnas'
+	ctn = {
+		'galeria': galeria,
+		'title': title
+	}
+
+	return HttpResponse(template.render(ctn, request))
+
 def galeria(request):
 	galeria = Galeria.objects.order_by('id')
 	template = loader.get_template('galeria.html')
