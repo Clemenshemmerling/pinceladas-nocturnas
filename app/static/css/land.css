@@ -6,3 +6,8 @@ body {
 	background-position: center;
 	background-size: cover;
 }
+
+#headContainer a {
+	color: white;
+	text-decoration: none;
+}
